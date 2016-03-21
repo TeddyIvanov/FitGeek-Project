@@ -1,0 +1,564 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		67B512C21CA080B1007C636E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 67B512C11CA080B1007C636E /* AppDelegate.swift */; };
+		67B512C41CA080B1007C636E /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 67B512C31CA080B1007C636E /* ViewController.swift */; };
+		67B512C71CA080B1007C636E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 67B512C51CA080B1007C636E /* Main.storyboard */; };
+		67B512C91CA080B1007C636E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 67B512C81CA080B1007C636E /* Assets.xcassets */; };
+		67B512CC1CA080B1007C636E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 67B512CA1CA080B1007C636E /* LaunchScreen.storyboard */; };
+		67B512D11CA080B1007C636E /* FitGeek WatchKit App.app in Embed Watch Content */ = {isa = PBXBuildFile; fileRef = 67B512D01CA080B1007C636E /* FitGeek WatchKit App.app */; };
+		67B512D71CA080B1007C636E /* Interface.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 67B512D51CA080B1007C636E /* Interface.storyboard */; };
+		67B512D91CA080B1007C636E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 67B512D81CA080B1007C636E /* Assets.xcassets */; };
+		67B512E01CA080B1007C636E /* FitGeek WatchKit Extension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 67B512DF1CA080B1007C636E /* FitGeek WatchKit Extension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		67B512E71CA080B1007C636E /* InterfaceController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 67B512E61CA080B1007C636E /* InterfaceController.swift */; };
+		67B512E91CA080B1007C636E /* ExtensionDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 67B512E81CA080B1007C636E /* ExtensionDelegate.swift */; };
+		67B512EB1CA080B1007C636E /* NotificationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 67B512EA1CA080B1007C636E /* NotificationController.swift */; };
+		67B512ED1CA080B1007C636E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 67B512EC1CA080B1007C636E /* Assets.xcassets */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		67B512D21CA080B1007C636E /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 67B512B61CA080B1007C636E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 67B512CF1CA080B1007C636E;
+			remoteInfo = "FitGeek WatchKit App";
+		};
+		67B512E11CA080B1007C636E /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 67B512B61CA080B1007C636E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 67B512DE1CA080B1007C636E;
+			remoteInfo = "FitGeek WatchKit Extension";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		67B512F41CA080B1007C636E /* Embed App Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				67B512E01CA080B1007C636E /* FitGeek WatchKit Extension.appex in Embed App Extensions */,
+			);
+			name = "Embed App Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		67B512F81CA080B1007C636E /* Embed Watch Content */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "$(CONTENTS_FOLDER_PATH)/Watch";
+			dstSubfolderSpec = 16;
+			files = (
+				67B512D11CA080B1007C636E /* FitGeek WatchKit App.app in Embed Watch Content */,
+			);
+			name = "Embed Watch Content";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		67B512BE1CA080B1007C636E /* FitGeek.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FitGeek.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		67B512C11CA080B1007C636E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		67B512C31CA080B1007C636E /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		67B512C61CA080B1007C636E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		67B512C81CA080B1007C636E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		67B512CB1CA080B1007C636E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		67B512CD1CA080B1007C636E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		67B512D01CA080B1007C636E /* FitGeek WatchKit App.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "FitGeek WatchKit App.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		67B512D61CA080B1007C636E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Interface.storyboard; sourceTree = "<group>"; };
+		67B512D81CA080B1007C636E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		67B512DA1CA080B1007C636E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		67B512DF1CA080B1007C636E /* FitGeek WatchKit Extension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = "FitGeek WatchKit Extension.appex"; sourceTree = BUILT_PRODUCTS_DIR; };
+		67B512E51CA080B1007C636E /* PushNotificationPayload.apns */ = {isa = PBXFileReference; lastKnownFileType = text; path = PushNotificationPayload.apns; sourceTree = "<group>"; };
+		67B512E61CA080B1007C636E /* InterfaceController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InterfaceController.swift; sourceTree = "<group>"; };
+		67B512E81CA080B1007C636E /* ExtensionDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExtensionDelegate.swift; sourceTree = "<group>"; };
+		67B512EA1CA080B1007C636E /* NotificationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationController.swift; sourceTree = "<group>"; };
+		67B512EC1CA080B1007C636E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		67B512EE1CA080B1007C636E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		67B512BB1CA080B1007C636E /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		67B512DC1CA080B1007C636E /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		67B512B51CA080B1007C636E = {
+			isa = PBXGroup;
+			children = (
+				67B512C01CA080B1007C636E /* FitGeek */,
+				67B512D41CA080B1007C636E /* FitGeek WatchKit App */,
+				67B512E31CA080B1007C636E /* FitGeek WatchKit Extension */,
+				67B512BF1CA080B1007C636E /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		67B512BF1CA080B1007C636E /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				67B512BE1CA080B1007C636E /* FitGeek.app */,
+				67B512D01CA080B1007C636E /* FitGeek WatchKit App.app */,
+				67B512DF1CA080B1007C636E /* FitGeek WatchKit Extension.appex */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		67B512C01CA080B1007C636E /* FitGeek */ = {
+			isa = PBXGroup;
+			children = (
+				67B512C11CA080B1007C636E /* AppDelegate.swift */,
+				67B512C31CA080B1007C636E /* ViewController.swift */,
+				67B512C51CA080B1007C636E /* Main.storyboard */,
+				67B512C81CA080B1007C636E /* Assets.xcassets */,
+				67B512CA1CA080B1007C636E /* LaunchScreen.storyboard */,
+				67B512CD1CA080B1007C636E /* Info.plist */,
+			);
+			path = FitGeek;
+			sourceTree = "<group>";
+		};
+		67B512D41CA080B1007C636E /* FitGeek WatchKit App */ = {
+			isa = PBXGroup;
+			children = (
+				67B512D51CA080B1007C636E /* Interface.storyboard */,
+				67B512D81CA080B1007C636E /* Assets.xcassets */,
+				67B512DA1CA080B1007C636E /* Info.plist */,
+			);
+			path = "FitGeek WatchKit App";
+			sourceTree = "<group>";
+		};
+		67B512E31CA080B1007C636E /* FitGeek WatchKit Extension */ = {
+			isa = PBXGroup;
+			children = (
+				67B512E61CA080B1007C636E /* InterfaceController.swift */,
+				67B512E81CA080B1007C636E /* ExtensionDelegate.swift */,
+				67B512EA1CA080B1007C636E /* NotificationController.swift */,
+				67B512EC1CA080B1007C636E /* Assets.xcassets */,
+				67B512EE1CA080B1007C636E /* Info.plist */,
+				67B512E41CA080B1007C636E /* Supporting Files */,
+			);
+			path = "FitGeek WatchKit Extension";
+			sourceTree = "<group>";
+		};
+		67B512E41CA080B1007C636E /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				67B512E51CA080B1007C636E /* PushNotificationPayload.apns */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		67B512BD1CA080B1007C636E /* FitGeek */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 67B512F91CA080B1007C636E /* Build configuration list for PBXNativeTarget "FitGeek" */;
+			buildPhases = (
+				67B512BA1CA080B1007C636E /* Sources */,
+				67B512BB1CA080B1007C636E /* Frameworks */,
+				67B512BC1CA080B1007C636E /* Resources */,
+				67B512F81CA080B1007C636E /* Embed Watch Content */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				67B512D31CA080B1007C636E /* PBXTargetDependency */,
+			);
+			name = FitGeek;
+			productName = FitGeek;
+			productReference = 67B512BE1CA080B1007C636E /* FitGeek.app */;
+			productType = "com.apple.product-type.application";
+		};
+		67B512CF1CA080B1007C636E /* FitGeek WatchKit App */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 67B512F51CA080B1007C636E /* Build configuration list for PBXNativeTarget "FitGeek WatchKit App" */;
+			buildPhases = (
+				67B512CE1CA080B1007C636E /* Resources */,
+				67B512F41CA080B1007C636E /* Embed App Extensions */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				67B512E21CA080B1007C636E /* PBXTargetDependency */,
+			);
+			name = "FitGeek WatchKit App";
+			productName = "FitGeek WatchKit App";
+			productReference = 67B512D01CA080B1007C636E /* FitGeek WatchKit App.app */;
+			productType = "com.apple.product-type.application.watchapp2";
+		};
+		67B512DE1CA080B1007C636E /* FitGeek WatchKit Extension */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 67B512F11CA080B1007C636E /* Build configuration list for PBXNativeTarget "FitGeek WatchKit Extension" */;
+			buildPhases = (
+				67B512DB1CA080B1007C636E /* Sources */,
+				67B512DC1CA080B1007C636E /* Frameworks */,
+				67B512DD1CA080B1007C636E /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "FitGeek WatchKit Extension";
+			productName = "FitGeek WatchKit Extension";
+			productReference = 67B512DF1CA080B1007C636E /* FitGeek WatchKit Extension.appex */;
+			productType = "com.apple.product-type.watchkit2-extension";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		67B512B61CA080B1007C636E /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0720;
+				LastUpgradeCheck = 0720;
+				ORGANIZATIONNAME = "Teddy Ivanov";
+				TargetAttributes = {
+					67B512BD1CA080B1007C636E = {
+						CreatedOnToolsVersion = 7.2.1;
+					};
+					67B512CF1CA080B1007C636E = {
+						CreatedOnToolsVersion = 7.2.1;
+					};
+					67B512DE1CA080B1007C636E = {
+						CreatedOnToolsVersion = 7.2.1;
+					};
+				};
+			};
+			buildConfigurationList = 67B512B91CA080B1007C636E /* Build configuration list for PBXProject "FitGeek" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 67B512B51CA080B1007C636E;
+			productRefGroup = 67B512BF1CA080B1007C636E /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				67B512BD1CA080B1007C636E /* FitGeek */,
+				67B512CF1CA080B1007C636E /* FitGeek WatchKit App */,
+				67B512DE1CA080B1007C636E /* FitGeek WatchKit Extension */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		67B512BC1CA080B1007C636E /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				67B512CC1CA080B1007C636E /* LaunchScreen.storyboard in Resources */,
+				67B512C91CA080B1007C636E /* Assets.xcassets in Resources */,
+				67B512C71CA080B1007C636E /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		67B512CE1CA080B1007C636E /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				67B512D91CA080B1007C636E /* Assets.xcassets in Resources */,
+				67B512D71CA080B1007C636E /* Interface.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		67B512DD1CA080B1007C636E /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				67B512ED1CA080B1007C636E /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		67B512BA1CA080B1007C636E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				67B512C41CA080B1007C636E /* ViewController.swift in Sources */,
+				67B512C21CA080B1007C636E /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		67B512DB1CA080B1007C636E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				67B512EB1CA080B1007C636E /* NotificationController.swift in Sources */,
+				67B512E91CA080B1007C636E /* ExtensionDelegate.swift in Sources */,
+				67B512E71CA080B1007C636E /* InterfaceController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		67B512D31CA080B1007C636E /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 67B512CF1CA080B1007C636E /* FitGeek WatchKit App */;
+			targetProxy = 67B512D21CA080B1007C636E /* PBXContainerItemProxy */;
+		};
+		67B512E21CA080B1007C636E /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 67B512DE1CA080B1007C636E /* FitGeek WatchKit Extension */;
+			targetProxy = 67B512E11CA080B1007C636E /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		67B512C51CA080B1007C636E /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				67B512C61CA080B1007C636E /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		67B512CA1CA080B1007C636E /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				67B512CB1CA080B1007C636E /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+		67B512D51CA080B1007C636E /* Interface.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				67B512D61CA080B1007C636E /* Base */,
+			);
+			name = Interface.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		67B512EF1CA080B1007C636E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		67B512F01CA080B1007C636E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		67B512F21CA080B1007C636E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = "FitGeek WatchKit Extension/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = edu.missouri.FitGeek.watchkitapp.watchkitextension;
+				PRODUCT_NAME = "${TARGET_NAME}";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 2.1;
+			};
+			name = Debug;
+		};
+		67B512F31CA080B1007C636E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = "FitGeek WatchKit Extension/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = edu.missouri.FitGeek.watchkitapp.watchkitextension;
+				PRODUCT_NAME = "${TARGET_NAME}";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 2.1;
+			};
+			name = Release;
+		};
+		67B512F61CA080B1007C636E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				EMBEDDED_CONTENT_CONTAINS_SWIFT = YES;
+				IBSC_MODULE = FitGeek_WatchKit_Extension;
+				INFOPLIST_FILE = "FitGeek WatchKit App/Info.plist";
+				PRODUCT_BUNDLE_IDENTIFIER = edu.missouri.FitGeek.watchkitapp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 2.1;
+			};
+			name = Debug;
+		};
+		67B512F71CA080B1007C636E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				EMBEDDED_CONTENT_CONTAINS_SWIFT = YES;
+				IBSC_MODULE = FitGeek_WatchKit_Extension;
+				INFOPLIST_FILE = "FitGeek WatchKit App/Info.plist";
+				PRODUCT_BUNDLE_IDENTIFIER = edu.missouri.FitGeek.watchkitapp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 2.1;
+			};
+			name = Release;
+		};
+		67B512FA1CA080B1007C636E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = FitGeek/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = edu.missouri.FitGeek;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		67B512FB1CA080B1007C636E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = FitGeek/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = edu.missouri.FitGeek;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		67B512B91CA080B1007C636E /* Build configuration list for PBXProject "FitGeek" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				67B512EF1CA080B1007C636E /* Debug */,
+				67B512F01CA080B1007C636E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		67B512F11CA080B1007C636E /* Build configuration list for PBXNativeTarget "FitGeek WatchKit Extension" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				67B512F21CA080B1007C636E /* Debug */,
+				67B512F31CA080B1007C636E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		67B512F51CA080B1007C636E /* Build configuration list for PBXNativeTarget "FitGeek WatchKit App" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				67B512F61CA080B1007C636E /* Debug */,
+				67B512F71CA080B1007C636E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		67B512F91CA080B1007C636E /* Build configuration list for PBXNativeTarget "FitGeek" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				67B512FA1CA080B1007C636E /* Debug */,
+				67B512FB1CA080B1007C636E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 67B512B61CA080B1007C636E /* Project object */;
+}
