@@ -7,8 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		675BC1851CA0C722002F4836 /* HomeScreenNavigationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 675BC1841CA0C722002F4836 /* HomeScreenNavigationController.swift */; };
 		67B512C21CA080B1007C636E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 67B512C11CA080B1007C636E /* AppDelegate.swift */; };
-		67B512C41CA080B1007C636E /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 67B512C31CA080B1007C636E /* ViewController.swift */; };
 		67B512C71CA080B1007C636E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 67B512C51CA080B1007C636E /* Main.storyboard */; };
 		67B512C91CA080B1007C636E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 67B512C81CA080B1007C636E /* Assets.xcassets */; };
 		67B512CC1CA080B1007C636E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 67B512CA1CA080B1007C636E /* LaunchScreen.storyboard */; };
@@ -65,9 +65,9 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		675BC1841CA0C722002F4836 /* HomeScreenNavigationController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeScreenNavigationController.swift; sourceTree = "<group>"; };
 		67B512BE1CA080B1007C636E /* FitGeek.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FitGeek.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		67B512C11CA080B1007C636E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		67B512C31CA080B1007C636E /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		67B512C61CA080B1007C636E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		67B512C81CA080B1007C636E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		67B512CB1CA080B1007C636E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -127,11 +127,11 @@
 			isa = PBXGroup;
 			children = (
 				67B512C11CA080B1007C636E /* AppDelegate.swift */,
-				67B512C31CA080B1007C636E /* ViewController.swift */,
 				67B512C51CA080B1007C636E /* Main.storyboard */,
 				67B512C81CA080B1007C636E /* Assets.xcassets */,
 				67B512CA1CA080B1007C636E /* LaunchScreen.storyboard */,
 				67B512CD1CA080B1007C636E /* Info.plist */,
+				675BC1841CA0C722002F4836 /* HomeScreenNavigationController.swift */,
 			);
 			path = FitGeek;
 			sourceTree = "<group>";
@@ -299,7 +299,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				67B512C41CA080B1007C636E /* ViewController.swift in Sources */,
+				675BC1851CA0C722002F4836 /* HomeScreenNavigationController.swift in Sources */,
 				67B512C21CA080B1007C636E /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -541,6 +541,7 @@
 				67B512F31CA080B1007C636E /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		67B512F51CA080B1007C636E /* Build configuration list for PBXNativeTarget "FitGeek WatchKit App" */ = {
 			isa = XCConfigurationList;
@@ -549,6 +550,7 @@
 				67B512F71CA080B1007C636E /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		67B512F91CA080B1007C636E /* Build configuration list for PBXNativeTarget "FitGeek" */ = {
 			isa = XCConfigurationList;
@@ -557,6 +559,7 @@
 				67B512FB1CA080B1007C636E /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
