@@ -1,35 +1,30 @@
 //
-//  CustomWorkoutsTableTableViewController.swift
+//  CustomWorkoutExcerciseTableViewController.swift
 //  FitGeek
 //
-//  Created by MU IT Program on 3/29/16.
+//  Created by MU IT Program on 4/7/16.
 //  Copyright © 2016 Teddy Ivanov. All rights reserved.
 //
 
 import UIKit
 
-class CustomWorkoutsTableTableViewController: UITableViewController {
-    
+class CustomWorkoutExcerciseTableViewController: UITableViewController {
 
+    var workout: Workout?
+    var exercisesInWorkout: [Exercise]!
+    
     var alertController: UIAlertController!
-    
-
-    let exerciseCollection = ExerciseCollection.sharedInstance
-    
-    var parsedExercises: [Exercise]!
-    var parsedWorkouts: [Workout]!
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        self.title = "Workouts"
         
-        parsedWorkouts = exerciseCollection.workouts
-        
-        //print(parsedWorkouts.first?.exercise.first?.equipment)
-        
+        self.title = "Workout"
+        if let w = workout{
+            exercisesInWorkout = w.exercise
+        }
         /*
-        alertController = UIAlertController(title: "", message: "You can create new workouts", preferredStyle: UIAlertControllerStyle.ActionSheet)
-        let addWorkoutAction = UIAlertAction(title: "Create new Workout", style: .Default) { (action) in
+        alertController = UIAlertController(title: "", message: "You can customize your workouts", preferredStyle: UIAlertControllerStyle.ActionSheet)
+        let addWorkoutAction = UIAlertAction(title: "Add to Workout", style: .Default) { (action) in
             print("Add new workout")
         }
         let cancelAction = UIAlertAction(title: "Cancel", style: .Cancel) { (action) in
@@ -38,7 +33,8 @@ class CustomWorkoutsTableTableViewController: UITableViewController {
         
         alertController.addAction(addWorkoutAction)
         alertController.addAction(cancelAction)
-        */
+*/
+
         // Uncomment the following line to preserve selection between presentations
         // self.clearsSelectionOnViewWillAppear = false
 
@@ -60,40 +56,52 @@ class CustomWorkoutsTableTableViewController: UITableViewController {
 
     override func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         // #warning Incomplete implementation, return the number of rows
-        return parsedWorkouts.count
-        //return example.count
+        return exercisesInWorkout.count
     }
 
-    
-    override func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCellWithIdentifier("MyWorkouts", forIndexPath: indexPath) as! MyWorkoutsTableViewCell
-      
-        let video = parsedWorkouts[indexPath.row]
-        cell.nameOfWorkout.text = video.title
-        cell.descriptionOfWorkout.text = video.description
-        cell.thumbNailImageView.image = UIImage(named: video.image)
+    override func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) ->
+        UITableViewCell {
+            
+        let cell = tableView.dequeueReusableCellWithIdentifier("Exercises", forIndexPath: indexPath) as! ExerciseTableViewCell
         
-        //cell.nameOfWorkout.text = example[indexPath.row]
-        //cell.descriptionOfWorkout.text = example2[indexPath.row]
-        
-        cell.accessoryType = .DisclosureIndicator
-        
+            //cell.nameOfExercise.text = example[indexPath.row]
+            //cell.descriptionOfExercise.text = example2[indexPath.row]
+            let exercise = exercisesInWorkout[indexPath.row]
+            cell.nameOfExercise.text = exercise.title
+            cell.descriptionOfExercise.text = exercise.description
+            cell.thumbNailImage.image = UIImage(named: exercise.image)
+
+
+        // Configure the cell...
+
         return cell
     }
     
-    
     override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
-        let controller: CustomWorkoutExcerciseTableViewController = segue.destinationViewController as! CustomWorkoutExcerciseTableViewController
+        let controller: FitnessPlayerViewController = segue.destinationViewController as! FitnessPlayerViewController
         
         if let row = self.tableView.indexPathForSelectedRow?.row {
-            controller.workout = parsedWorkouts[row]
+            controller.exercise = exercisesInWorkout[row]
         }
     }
 
-    
+ 
     @IBAction func showActionSheet(sender: AnyObject) {
-        self.presentViewController(alertController, animated: true, completion: nil)
+         self.presentViewController(alertController, animated: true, completion: nil)
     }
+    
+    override func tableView(tableView: UITableView, titleForHeaderInSection section: Int) -> String? {
+        return workout?.title
+    }
+    
+
+    /*
+    // Override to support conditional editing of the table view.
+    override func tableView(tableView: UITableView, canEditRowAtIndexPath indexPath: NSIndexPath) -> Bool {
+        // Return false if you do not want the specified item to be editable.
+        return true
+    }
+    */
     /*
     override func tableView(tableView: UITableView, editActionsForRowAtIndexPath indexPath: NSIndexPath) -> [UITableViewRowAction]? {
         let synchAction = UITableViewRowAction(style: UITableViewRowActionStyle.Default, title: "Synch") { (action , indexPath ) -> Void in
@@ -103,9 +111,8 @@ class CustomWorkoutsTableTableViewController: UITableViewController {
         let deleteAction = UITableViewRowAction(style: UITableViewRowActionStyle.Default, title: "Delete") { (action , indexPath) -> Void in
             self.editing = false
             print("Delete button pressed")
-            //self.example.removeAtIndex(indexPath.row)
-            //self.example2.removeAtIndex(indexPath.row)
-            self.parsedExercises.removeAtIndex(indexPath.row)
+           // self.example.removeAtIndex(indexPath.row)
+           // self.example2.removeAtIndex(indexPath.row)
             tableView.deleteRowsAtIndexPaths([indexPath], withRowAnimation: .Fade)
         }
         deleteAction.backgroundColor = UIColor.redColor()
@@ -113,27 +120,18 @@ class CustomWorkoutsTableTableViewController: UITableViewController {
         return [synchAction, deleteAction]
     }
     */
-
-    /*
-    // Override to support conditional editing of the table view.
-    override func tableView(tableView: UITableView, canEditRowAtIndexPath indexPath: NSIndexPath) -> Bool {
-        // Return false if you do not want the specified item to be editable.
-        return true
-    }
-    */
-
     /*
     // Override to support editing the table view.
     override func tableView(tableView: UITableView, commitEditingStyle editingStyle: UITableViewCellEditingStyle, forRowAtIndexPath indexPath: NSIndexPath) {
         if editingStyle == .Delete {
             // Delete the row from the data source
+            example.removeAtIndex(indexPath.row)
+            example2.removeAtIndex(indexPath.row)
             tableView.deleteRowsAtIndexPaths([indexPath], withRowAnimation: .Fade)
         } else if editingStyle == .Insert {
             // Create a new instance of the appropriate class, insert it into the array, and add a new row to the table view
-        }    
     }
-    */
-
+*/
     /*
     // Override to support rearranging the table view.
     override func tableView(tableView: UITableView, moveRowAtIndexPath fromIndexPath: NSIndexPath, toIndexPath: NSIndexPath) {

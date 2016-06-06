@@ -1,0 +1,195 @@
+{
+    "status": "ok",
+    "workouts":[
+    {
+        "title": "Weight Training Workout",
+        "description": "Wide range of weight training exercises",
+        "image": "AirSquats.jpg",
+        "exercises":[
+            {
+                "image": "AirSquats.jpg",
+                "title": "Goblin squat",
+                "description": "Works out the butt, thighs and hamstrings",
+                "equipment": "Free weights",
+                "tips": "1. Feet shoulder width apart. \n2. Keep heels on ground.",
+                "video": "AirSquatsFinal",
+                "time": "00:10"
+            },
+            {
+                "image": "DumbellBenchPress.jpg",
+                "title": "Dumbbell bench press",
+                "description": "Focuses on chest, biceps and core",
+                "equipment": "Stability Ball and Dumbells",
+                "tips": "1. Exhale when pushing the bar upwards. \n2. Flex your abdomen when you're struggling to finish the last rep.",
+                "video": "DumbellBenchPressFinal",
+                "time": "00:10"
+            },
+            {
+                "image": "BackFiles.jpg",
+                "title": "Reverse peck files",
+                "description": "Trains the back, biceps, triceps and shoulders",
+                "equipment": "Dumbells",
+                "tips": "1. Keep knees slightly bent. \n2. Keep arms at 90 degree angles.",
+                "video": "BackFliesFinal",
+                "time": "00:10"
+            },
+            {
+                "image": "BicepCurls.jpg",
+                "title": "Bicep curls",
+                "description": "Focuses on biceps",
+                "equipment": "Dumbells",
+                "tips": "1. Palms face toward your thighs when arm is extended. \n2. Palms face your chest when bicep is flexed.",
+                "video": "BicepCurlsFinal",
+                "time": "00:10"
+            },
+            {
+                "image": "LungesWithWeight.jpg",
+                "title": "In-line lunges with weight",
+                "description": "Works out the thighs, hamstrings and core",
+                "equipment": "Dumbells",
+                "tips": "Keep back straight.",
+                "video": "LungesWithWeightFinal",
+                "time": "00:10"
+            }
+            ]
+    },
+    {
+        "title": "Circuit Training",
+        "description": "Fast paced cardio exercises",
+        "image": "PowerSquats.jpg",
+        "exercises":[
+            {
+                "image": "PowerSquats.jpg",
+                "title": "Power squat",
+                "description": "Exercises thighs and hamstrings",
+                "equipment": "Free weight",
+                "tips": "1. Land quietly on toes. \n2. Legs stay at least shoulder width apart.",
+                "video": "PowerSquatsFinal",
+                "time": "00:10"
+            },
+            {
+                "image": "InchwormPlankSuicidesWithHop.jpg",
+                "title": "Inchworm plank suicides",
+                "description": "Full body cardio exercise",
+                "equipment": "Free weight",
+                "tips": "1. Keep you back in neutral position when in a plank position. \n2. Alternate which arm you push the ground first to get up.",
+                "video": "InchwormPlankSuicidesWithHopFinal",
+                "time": "00:10"
+            },
+            {
+                "image": "Plankjacks.jpg",
+                "title": "Plank jacks",
+                "description": "Trains core, back and butt",
+                "equipment": "Free weight",
+                "tips": "1. Keep a neutral back. \n2. Doing it on your forearms is harder than doing the movement on your hands.",
+                "video": "PlankJacksFinal",
+                "time": "00:10"
+            },
+            {
+                "image": "JackNives.jpg",
+                "title": "Jack knives",
+                "description": "Targets core and hip flexors",
+                "equipment": "Free weight",
+                "tips": "1. Keep feet, legs, arms and hands off the ground the whole time. \n2. Try to touch your toes when coming up.",
+                "video": "JackknivesFinal",
+                "time": "00:10"
+            }
+        ]
+    },
+    {
+        "title": "Upper Body and Core",
+        "description": "A set exercises focusing on strengthing abs and upper body",
+        "image": "Scissors.jpg",
+        "exercises":[
+            {
+                "image": "Scissors.jpg",
+                "title": "Scissors",
+                "description": "Impacts core, back, butt and hip flexors",
+                "equipment": "Free weight",
+                "tips": "1. Keep your hands at your sides the entire time. \n2. Kick your feet as fast as you can.",
+                "video": "ScissorsFinal",
+                "time": "00:10"
+            },
+            {
+                "image": "SpiderPlanks.jpg",
+                "title": "Spider planks",
+                "description": "Trains core, back and butt",
+                "equipment": "Free weight",
+                "tips": "1. Get your knees as close to your elbows as possible.",
+                "video": "SpiderPlanksFinal",
+                "time": "00:10"
+            },
+            {
+                "image": "WideStancePushup.jpg",
+                "title": "Push up",
+                "description": "Targets upper body region",
+                "equipment": "Free weight",
+                "tips": "1. Go down untill your arms reach 90 degress. \n2. Keep your back neutral.",
+                "video": "WideStancePushupFinal",
+                "time": "00:10"
+            },
+            {
+                "image": "ProneWalkout.jpg",
+                "title": "Prone walkout",
+                "description": "Works upper body muscles",
+                "equipment": "Free weight",
+                "tips": "Keep your back neutral.",
+                "video": "ProneWalkoutFinal",
+                "time": "00:10"
+            },
+            {
+                "image": "ShoulderPushup.jpg",
+                "title": "Shoulder pushup",
+                "description": "Focuses on biceps, shoulders and streches out calves",
+                "equipment": "Free weight",
+                "tips": "1. Keep your legs straight. \n2. Make sure your hands are wider than shoulder witdth apart.",
+                "video": "ShoulderPushupFinal",
+                "time": "00:10"
+            }
+        ]
+    },
+    {
+        "title": "Lower Body",
+        "description": "A set exercises focusing on strengthing lower body",
+        "image": "ToeTaps.jpg",
+        "exercises":[
+            {
+                "image": "AirSquats.jpg",
+                "title": "Air squats",
+                "description": "Impacts thighs and hamstrings",
+                "equipment": "Free weight",
+                "tips": "1. Landquietly on your toes. \n2. Keep feet at least shoulder width apart.",
+                "video": "AirSquatsFinal",
+                "time": "00:10"
+            },
+            {
+                "image": "ToeTaps.jpg",
+                "title": "Toe taps",
+                "description": "Works calves, thighs and hamstrings",
+                "equipment": "Stairs or halved stability ball",
+                "tips": "1. Keep your body on top of the ball. \n2. Light jumps, keeping on your toes.",
+                "video": "ToeTapsFinal",
+                "time": "00:10"
+            },
+            {
+                "image": "LateralStepOutSquat.jpg",
+                "title": "Blateral step-out squat",
+                "description": "Trains butt, thighs, hamstrings and calves",
+                "equipment": "Free weight",
+                "tips": "1. Lift the leg your're landing on next, up first and then leap to the side.",
+                "video": "LateralStepOutSquatFinal",
+                "time": "00:10"
+            },
+            {
+                "image": "LyingLegLift.jpg",
+                "title": "Lying leg lift",
+                "description": "Exercises core, butt, back and hip flexors",
+                "equipment": "Free weight",
+                "tips": "1. Keep your hands at side.",
+                "video": "LyingLegLiftsFinal",
+                "time": "00:10"
+            }
+        ]
+    }
+    ]
+}

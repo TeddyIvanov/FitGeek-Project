@@ -1,0 +1,168 @@
+{
+	"status": "ok",
+	"photos": [
+               
+               {
+               "image": "AirSquats.jpg",
+               "title": "Weight Training",
+               "description": "Goblin Squat",
+               "equipment": "Free weights",
+               "tips": "1. Feet shoulder width apart; 2. Keep heels on ground",
+               "time": "00:10"
+               },
+               
+               {
+               "image": "DumbellBenchPress.jpg",
+               "title": "Weight Training",
+               "description": "Dumbbell bench press",
+               "equipment": "Barbell",
+               "tips": "1. Exhale when pushing the bar upwards; 2. Flex your abdomen when you're struggling to finish the last rep.",
+               "time": "00:10"
+               },
+               
+               {
+               "image": "BackFiles.jpg",
+               "title": "Weight Training",
+               "description": "Reverse peck files",
+               "equipment": "Free weight",
+               "tips": "1. Keep knees slightly bent; 2. Keep arms at 90 degree angles",
+               "time": "00:10"
+               },
+               
+               {
+               "image": "BicepCurls.jpg",
+               "title": "Weight Training",
+               "description": "Reverse peck files",
+               "equipment": "Free weight",
+               "tips": "1. Palms face toward your thighs when arm is extended; 2. Palms face your chest when bicep is flexed.",
+               "time": "00:10"
+               },
+               
+               {
+               "image": "LungesWithWeight.jpg",
+               "title": "Weight Training",
+               "description": "In-line lunges with weight",
+               "equipment": "Free weight",
+               "tips": "Keep back stright.",
+               "time": "00:10"
+               },
+               
+               {
+               "image": "PowerSquats.jpg",
+               "title": "Circuit",
+               "description": "Power Squat",
+               "equipment": "Free weight",
+               "tips": "1. Land quietly on toes; 2. Legs stay at least shoulder width apart.",
+               "time": "00:10"
+               },
+               
+               {
+               "image": "InchwormPlankSuicidesWithHop.jpg",
+               "title": "Circuit",
+               "description": "Inchworm plank suicides with hops",
+               "equipment": "Free weight",
+               "tips": "1. Keep you back in neutral position when in a plank position; 2. Alternate which arm you push the ground first to get up.",
+               "time": "00:10"
+               },
+               
+               {
+               "image": "Plankjacks.jpg",
+               "title": "Circuit",
+               "description": "Plank jacks",
+               "equipment": "Free weight",
+               "tips": "1. Keep a neutral back; 2. Doing it on your forearms is harder than doing the movement on your hands.",
+               "time": "00:10"
+               },
+               
+               {
+               "image": "JackNives.jpg",
+               "title": "Circuit",
+               "description": "Jack knives",
+               "equipment": "Free weight",
+               "tips": "1. Keep feet, legs, arms and hands off the ground the whole time; 2. Try to touch your toes when coming up.",
+               "time": "00:10"
+               },
+               
+               {
+               "image": "Scissors.jpg",
+               "title": "Abdominal",
+               "description": "Scissors",
+               "equipment": "Free weight",
+               "tips": "1. Keep your hands at your sides the entire time. 2. Kick your feet as fast as you can.",
+               "time": "00:10"
+               },
+               
+               {
+               "image": "SpiderPlanks.jpg",
+               "title": "Abdominal",
+               "description": "Spider Planks",
+               "equipment": "Free weight",
+               "tips": "1. Get your knees as close to your elbows as possible.",
+               "time": "00:10"
+               },
+               
+               {
+               "image": "WideStancePushup.jpg",
+               "title": "Upper body",
+               "description": "Push up",
+               "equipment": "Free weight",
+               "tips": "1. Go down untill your arms reach 90 degress; 2. Keep your back neutral.",
+               "time": "00:10"
+               },
+               
+               {
+               "image": "ProneWalkout.jpg",
+               "title": "Upper body",
+               "description": "Prone walkout",
+               "equipment": "Free weight",
+               "tips": "Keep your back neutral.",
+               "time": "00:10"
+               },
+               
+               {
+               "image": "ShoulderPushup.jpg",
+               "title": "Shoulders and back",
+               "description": "Shoulder pushup",
+               "equipment": "Free weight",
+               "tips": "1. Keep your legs straight; 2. Make sure your hands are wider than shoulder witdth apart.",
+               "time": "00:10"
+               },
+               
+               {
+               "image": "AirSquats.jpg",
+               "title": "Leg",
+               "description": "Air Squats",
+               "equipment": "Free weight",
+               "tips": "1. Landquietly on your toes; 2. Keep feet at least shoulder width apart.",
+               "time": "00:10"
+               },
+               
+               {
+               "image": "ToeTaps.jpg",
+               "title": "Leg",
+               "description": "Toe Taps",
+               "equipment": "Free weight",
+               "tips": "1. Keep your body on top of the ball; 2. Light jumps, keeping on your toes.",
+               "time": "00:10"
+               },
+               
+               {
+               "image": "LateralStepOutSquat.jpg",
+               "title": "Butt and hip",
+               "description": "Lateral Step-Out Squat",
+               "equipment": "Free weight",
+               "tips": "1. Lift the leg your're landing on next, up first and then leap to the side.",
+               "time": "00:10"
+               },
+               
+               {
+               "image": "LyingLegLift.jpg",
+               "title": "Leg",
+               "description": "Lying leg lift",
+               "equipment": "Free weight",
+               "tips": "1. Keep your hands at side.",
+               "time": "00:10"
+               }
+               
+ 	]
+}
